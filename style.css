@@ -1,0 +1,592 @@
+/* === Общие стили === */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+/* === Шапка сайта === */
+header {
+    background-color: #4B4B4B;
+    margin-bottom: 3%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+}
+
+.shapka img {
+    height: 60px;
+    width: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E10600;
+}
+
+
+
+
+
+
+
+.pro_nas {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+section {
+
+ display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.pro_nas:hover {
+    transform: translateY(-5px);
+}
+
+.pro_nas img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+.podval {
+    display: flex;
+    justify-content: space-around;
+align-items: flex-start;
+}
+
+
+
+
+
+.spisok1 {
+    display: flex;
+    justify-content: space-around;
+align-items:flex-start;
+
+
+
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.podval div {
+text-align: left;
+}
+
+h5{font-weight: 700;
+color: #fff;
+font-size: 16px;}
+
+.spisok2 {
+  font-weight: 700;  
+}
+
+footer {
+    background-color: black;
+    margin-top: 5%;
+}
+
+
+
+li:hover {
+    color:  #E10600;
+     transition: transform 0.3s ease;
+}
+
+
+
+h5:hover {
+    color:  #E10600;
+     transition: transform 0.3s ease;
+}
+
+
+
+.spisok1 {
+    display: flex;
+    flex-direction: column;  /* ставим заголовок сверху */
+    align-items: center;     /* центрируем заголовок */
+}
+
+.center-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cols {
+    display: flex;
+    gap: 40px;               /* расстояние между колонками */
+}
+
+.cols ul {
+    text-align: left;        /* пункты списка остаются слева */
+}
+
+
+@font-face{
+    font-family: 'Rubik';
+    url('./fonts/Rubik.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'Rubik';
+}
+
+
+
+
+
+
+
+body {
+  background: #111;
+  width: 100%;
+}
+.ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.login h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.login .links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+main {
+
+display: flex;
+justify-content: center;
+}
+
+
+
+.zayavka {
+  text-align: center  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Медиа-запросы для адаптивности === */
+
+/* Планшеты (до 992px) */
+@media (max-width: 992px) {
+    nav a {
+        font-size: 1.1em;
+    }
+
+    .car1 {
+        width: 45%;
+    }
+}
+
+/* Смартфоны (до 600px) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .shapka img {
+        height: 50px;
+    }
+
+    .car {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car1 {
+        width: 90%;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+}
